@@ -36,11 +36,15 @@ class CheckOut:
 						raise
 		return self.items,self.total
 
-	# function to parse discount rules
+	# A private function to parse discount rules
+	# Categorised the discount in two type:
+	# 1. type1 for 2-for-1
+	# 2. type2 for 3-or-more-19
+	# This parser can be externlized for more discount rules and it can be improved to raise errors if discount is invalid
 	def __discountParser(self,discount):
 		discount = discount.split('-')
 		if(len(discount)==3):
-			return "type1",int(discount[0]),int(discount[2])
+			return "type1",int(discount[0]),int(discount[2]) 
 		else:
 			return "type2",int(discount[0]),int(discount[3])
 
