@@ -8,13 +8,12 @@
 * Item details(Code, Name, Price,Discount) are in the ``itemStore.json`` file. Following is the format: <br>
     
     ``` { 
-        "VOUCHER": {
-                "name": "NoviCap Voucher",
-                "price": 5,
-                "discount": "2-for-1"
-                }
-        }
-        ```
+         "VOUCHER": {
+                    "name": "NoviCap Voucher",
+                    "price": 5,
+                    "discount": "2-for-1"
+                    }
+        }```
     
 * To test the code run ``test.py`` using command in terminal ``python test.py``. It contains 4 test-cases mentioned in the challenge.
  
