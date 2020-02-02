@@ -5,10 +5,10 @@ class CheckOut:
 
 	# a contrucor for CheckOut class
 	def __init__(self,pricing_rules):
-		self.pricing_rules = pricing_rules
-		self.total=0
-		self.items=[]
-		self.billed_item_quantity={}
+		self.pricing_rules = pricing_rules # pricing_rules for price and discount of items
+		self.total=0  # total bill amount
+		self.items=[] # item-list to store items in the order of scanning
+		self.billed_item_quantity={} # Bought items and their quantities
 
 	# function to scan items for billing
 	def scan(self,item):
